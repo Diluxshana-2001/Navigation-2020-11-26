@@ -1,8 +1,9 @@
 import './App.css';
-import Contactus from './components/Contactus';
-import Home from './components/Home';
-import AboutUs from './components/AboutUs';
-
+// import Contactus from './components/Contactus';
+// import Home from './components/Home';
+// import AboutUs from './components/AboutUs';
+import Login from './components/Login';
+import Dashboard from './components/Dashboard';
 
 import {BrowserRouter as Router, Routes, Route, Link, NavLink} from 'react-router-dom';
 
@@ -10,7 +11,7 @@ function App() {
   return (
     <div className='App'>
       <Router>
-        <nav>
+        {/* <nav>
           <ul>
             <li><Link to="/home">Home</Link></li>
             <li><Link to="/about">About</Link></li>
@@ -21,11 +22,14 @@ function App() {
             <Route path='/home' element={<Home/>} />
             <Route path='/about' element={<AboutUs/>} />
             <Route path='/contact' element={<Contactus/>} />
-           
+            
+            </Routes>*/}
+            <Route path='/dashboard' element={<Dashboard/>} />
+            <Route path='/login' element={<Login/>} />
             <Login />
             <Dashboard />
 
-          </Routes>
+          
       </Router>
 
 
